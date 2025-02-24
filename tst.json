@@ -1,0 +1,242 @@
+[
+    {
+        "Id": "f887b6baeff2c8692b977a47f877fb70874216915cfb4b0f483fa199db8999b8",
+        "Created": "2025-02-21T18:54:26.149152553Z",
+        "Path": "juno",
+        "Args": [
+            "--network",
+            "sepolia",
+            "--http",
+            "--http-port",
+            "6060",
+            "--http-host",
+            "0.0.0.0",
+            "--db-path",
+            "/snapshots/juno_sepolia",
+            "--disable-l1-verification"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": true,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 137,
+            "Error": "",
+            "StartedAt": "2025-02-21T18:54:26.315133951Z",
+            "FinishedAt": "2025-02-21T23:15:17.186635728Z"
+        },
+        "Image": "sha256:1c6e94145f72e0e5a2ccd44951712e2b4598175cab4e40d9ef6d69c9008815f7",
+        "ResolvConfPath": "/var/lib/docker/containers/f887b6baeff2c8692b977a47f877fb70874216915cfb4b0f483fa199db8999b8/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f887b6baeff2c8692b977a47f877fb70874216915cfb4b0f483fa199db8999b8/hostname",
+        "HostsPath": "/var/lib/docker/containers/f887b6baeff2c8692b977a47f877fb70874216915cfb4b0f483fa199db8999b8/hosts",
+        "LogPath": "",
+        "Name": "/juno",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/npc/snapshots/testnet:/snapshots/juno_sepolia"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "journald",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "6060/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "6060"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                37,
+                158
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/06d6d5cd2ab66f681f898c0b775f5bb7c6a99d7a83616d6b7cdebf25743adf1b-init/diff:/var/lib/docker/overlay2/a2c4833f2f21fc8ccc9e68b9ea31420080c762b97748d46c03ff0a8a07ecf673/diff:/var/lib/docker/overlay2/29388194f53f89706953650757cb194198b3b040849c42f4470afd480fe486cc/diff:/var/lib/docker/overlay2/5d87f20c819a5148f69a8f84726f144dc6aa52e2d388f6a16bcc45443a8f55f9/diff",
+                "MergedDir": "/var/lib/docker/overlay2/06d6d5cd2ab66f681f898c0b775f5bb7c6a99d7a83616d6b7cdebf25743adf1b/merged",
+                "UpperDir": "/var/lib/docker/overlay2/06d6d5cd2ab66f681f898c0b775f5bb7c6a99d7a83616d6b7cdebf25743adf1b/diff",
+                "WorkDir": "/var/lib/docker/overlay2/06d6d5cd2ab66f681f898c0b775f5bb7c6a99d7a83616d6b7cdebf25743adf1b/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/npc/snapshots/testnet",
+                "Destination": "/snapshots/juno_sepolia",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "f887b6baeff2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "6060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "--network",
+                "sepolia",
+                "--http",
+                "--http-port",
+                "6060",
+                "--http-host",
+                "0.0.0.0",
+                "--db-path",
+                "/snapshots/juno_sepolia",
+                "--disable-l1-verification"
+            ],
+            "Image": "nethermind/juno",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "juno"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "25.04"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "DriverOpts": null,
+                    "NetworkID": "31ea0da11ebd3281f08bae6471fbeb8913ebd4c1e20853d1ca0a481a06303dab",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
