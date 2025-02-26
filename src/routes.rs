@@ -17,6 +17,7 @@ pub async fn get_related_wallets(address: String, client: &State<Client>, config
         "{}/get_transaction_history?address={}",
         config.rpc_endpoint, address
     );
+
     let first_degree_txs: Vec<Transaction> = client
         .get(&first_degree_url)
         .send()

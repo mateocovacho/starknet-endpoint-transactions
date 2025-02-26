@@ -1,7 +1,6 @@
 use rocket::{routes, Rocket, Build, serde::json::Json, State};
 use reqwest::Client;
 use log::info;
-use env_logger;
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
 
@@ -22,7 +21,7 @@ struct TransactionGraph {
     edges: Vec<Edge>,
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Clone)]
 struct Node {
     id: u64, 
     label: String,
