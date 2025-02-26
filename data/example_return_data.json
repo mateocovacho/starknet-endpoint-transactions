@@ -1,0 +1,89 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 106,
+        "label": "0x5d2b684d9d741148a20ee7a06622122ec32cfee3",
+        "group": 1
+      },
+      {
+        "id": 107,
+        "label": "0x794d28ac31bcb136294761a556b68d2634094153",
+        "group": 1
+      },
+      {
+        "id": 108,
+        "label": "0x27e9f4748a2eb776be193a1f7dec2bb6daafe9cf",
+        "group": 1
+      }
+    ],
+    "edges": [
+      {
+        "to": 106,
+        "from": 107,
+        "label": "0.01 ETH",
+        "gas": 2.1e-14,
+        "arrows": {
+          "to": {
+            "enabled": true,
+            "scaleFactor": 0.5
+          }
+        },
+        "id": "43f69590-c8c4-4b87-b427-352b90d8d825"
+      },
+      {
+        "to": 106,
+        "from": 108,
+        "label": "5.42 ETH",
+        "gas": 2.1e-14,
+        "arrows": {
+          "to": {
+            "enabled": true,
+            "scaleFactor": 0.5
+          }
+        },
+        "id": "6eea06b9-6bf6-45b4-8922-7c0a0ec25b1a"
+      },
+      {
+        "to": 109,
+        "from": 106,
+        "label": "0.01 ETH",
+        "gas": 2.1e-14,
+        "arrows": {
+          "to": {
+            "enabled": true,
+            "scaleFactor": 0.5
+          }
+        },
+        "id": "3dac8684-e7b0-4be4-bb58-3feae7f40842"
+      },
+      {
+        "to": 109,
+        "from": 106,
+        "label": "2.99 ETH",
+        "gas": 2.1e-14,
+        "arrows": {
+          "to": {
+            "enabled": true,
+            "scaleFactor": 0.5
+          }
+        },
+        "id": "f1b8e83f-92de-4f78-9eb3-61414c830c06"
+      },
+      {
+        "to": 107,
+        "from": 110,
+        "label": "211.998719 ETH",
+        "gas": 2.1e-14,
+        "arrows": {
+          "to": {
+            "enabled": true,
+            "scaleFactor": 0.5
+          }
+        },
+        "id": "79b803a8-92c3-432b-9912-d5a06c4b922d"
+      }
+    ]
+  },
+  "counter": 76
+}
