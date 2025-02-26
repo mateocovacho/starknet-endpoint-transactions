@@ -1,4 +1,4 @@
-use rocket::{routes, Rocket, Build, serde::json::Json, State};
+use rocket::{routes, Rocket, Build, serde::json::Json, State, get, post};
 use reqwest::Client;
 use log::info;
 use serde::{Deserialize, Serialize};
@@ -8,7 +8,7 @@ mod config;
 mod routes;
 
 use config::Config;
-use routes::{ get_related_wallets, AppState};
+use routes::{ get_related_wallets };
 
 #[derive(Debug, Deserialize)]
 struct WalletRequest {
@@ -42,7 +42,7 @@ struct AppState {
     rpc_url: String,
 }
 
-#[post("/tx-graph", data = "<wallet>")]
+#[get("/tx-graph", data = "<wallet>")]
 async fn get_transaction_graph(
     wallet: Json<WalletRequest>,
     state: &State<AppState>,
@@ -98,8 +98,8 @@ async fn main() {
 
     // Build and launch Rocket
     let rocket: Rocket<Build> = rocket::build()
-        .manage(client)
-        .manage(config)
+        .manage(client.clone())
+        .manage(config.clone())
         .manage(AppState {
             rpc_client: client,
             rpc_url: config.rpc_endpoint,

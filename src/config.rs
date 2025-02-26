@@ -1,12 +1,13 @@
-use std::env;
+use std::{clone, env};
 use url::Url;
 
+#[derive(Clone)]
 pub struct Config {
     pub rpc_endpoint: String,
     pub network: Network,
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone)]
 pub enum Network {
     Mainnet,
     Sepolia,
